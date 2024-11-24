@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXURA - Brand Landing Page</title>
+    <link rel="stylesheet" href="brand_style.css">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+
+<body>
+    <div class="brand-page">
+        <header>
+            <h1>NEXURA for brands</h1>
+            <nav>
+                <a href="main_website.html">Home</a>
+                <a href="#">Creators</a>
+                <a href="collaboration_hub.html">Collaboration Hub</a>
+                <a href="#">Blog</a>
+                <button class="request-demo">Request Demo</button>
+            </nav>
+        </header>
+
+        <main class="content">
+            <h2>Drive <span class="changing-word">collaborations</span> with Creators & Influencers</h2>
+            <p>The all-in-one platform to scale influencer and affiliate marketing campaigns.</p>
+            <a href="brand login.html"><button class="get-started">Get Started</button></a>
+        </main>
+
+
+        <div class="testimonial-section">
+            <h2 class="section-title" data-aos="fade-up">Marketers love us</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Where brands and creators connect, collaborate, grow, & earn more money
+            </p>
+
+            <div class="testimonials">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/female-avatar.jpg" alt="Kate Slaney" class="avatar" />
+                    <h3>Kate Slaney</h3>
+                    <p>Oct 2024</p>
+                    <p>As a Brand Manager, Nexura full service...</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="images/man-avatar.jpg" alt="Anonymous" class="avatar" />
+                    <h3>Nathan D'Souza</h3>
+                    <p>Nov 2024</p>
+                    <p>Best tool (and team!) for narrowing down...</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+
+            <!-- Brand Carousel -->
+            <div class="brand-carousel" data-aos="fade-up" data-aos-delay="400">
+                <img src="images/duolingo.png" alt="Brand Logo 1" class="brand-logo" />
+                <img src="images/rog strix-2.png" alt="Brand Logo 2" class="brand-logo" />
+                <img src="images/logi-removebg-preview.png" alt="Brand Logo 3" class="brand-logo" />
+                <!-- Add more logos as needed -->
+            </div>
+        </div>
+
+        <section class="signup-section">
+            <div class="signup-container">
+                <h2>Get a Demo of Our Service</h2>
+                <a href="brands_demo.html"><button class="signup-button">Demo for Brands</button></a>
+            </div>
+        </section>
+
+        <section class="why-choose-section">
+            <h2>Why Brands Choose <span class="highlight-text">NEXURA</span></h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_LINK" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="insights-container">
+                <h3>Industry Leading <br> Influencer Search & Insights</h3>
+                <p> About us _______________________________________________________</p>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="brand_js.js"></script>
+
+
+    <!-- AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS animations
+    </script>
+
+    <script>
+        AOS.init({
+            duration: 800, // Duration of animations in milliseconds
+            once: true, // Animation will happen only once when scrolling down
+        });
+    </script>
+
+
+</body>
+
+</html>

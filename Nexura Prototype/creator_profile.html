@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Profile</title>
+    <link rel="stylesheet" href="creator_profile.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js library for interactive charts -->
+</head>
+
+<body>
+    <!--HEADER SECTION-->
+    <header>
+
+        <a href="main_website.html">
+            <div class="logo">Nexura</div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="brand.html">Brands</a></li>
+            <li><a href="creator.html">Creators</a></li>
+            <li><a href="collaboration_hub.html">Collaboration Hub</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+
+        <button class="demo-btn" onclick="window.location.href='demo.html'">Request Demo</button>
+
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner-section">
+        <img src="images/channel banner.jpg" alt="Banner Image" class="banner-photo">
+        <div class="profile-info">
+            <img src="images/sunraybee.jpg" alt="Profile Photo" class="profile-photo">
+            <h1>SunRayBee</h1>
+            <button class="follow-btn">Follow</button>
+        </div>
+    </section>
+
+    <!-- Channel Stats Section -->
+    <section class="stats-section">
+        <div class="stat">
+            <h3>Subscribers</h3>
+            <p>150K</p>
+        </div>
+        <div class="stat">
+            <h3>Views</h3>
+            <p>3.2M</p>
+        </div>
+        <div class="stat">
+            <h3>Videos</h3>
+            <p>125</p>
+        </div>
+        <div class="stat">
+            <h3>Engagement Rate</h3>
+            <p>8.7%</p>
+        </div>
+    </section>
+
+    <!-- Charts Section -->
+    <section class="charts-section">
+        <h2>Channel Insights</h2>
+        <div class="chart-container">
+            <canvas id="engagementChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="growthChart"></canvas>
+        </div>
+    </section>
+
+    <!-- Bio & Content Info -->
+    <section class="bio-content">
+        <h2>About the Creator</h2>
+        <p>🎉 Reached 200K followers milestone
+            🏆 Video "Battle Royale Showdown" hit 300K views in a week
+            📈 Highest engagement rate in October: 22% on “Epic Boss Fights Livestream”</p>
+
+        <h2>Content Schedule & Posting Frequency</h2>
+        <p>Average Posts Per Week: 5</p>
+        Livestreams: Tuesdays, Thursdays, and Saturdays
+        Upcoming Content:
+        Game Review: "Latest FPS Releases"
+        Gameplay Series: "Surviving the Apocalypse"
+        Collaboration: “Duo Battles” with other creators</p>
+
+        <h2>Professional Portfolio</h2>
+
+        <h3>1. Brand Partnership with AlienGear:</h3>
+        <p>Created sponsored content for AlienGear gaming accessories, resulting in high engagement and positive
+            feedback.</p>
+
+        <h3>2. Sponsored Video Series with GameNation:</h3>
+        <p>Promoted the latest console release through a series of gameplay tutorials.</p>
+
+        <h3>3. Collaboration with RazorTech:</h3>
+        <p>Produced an in-depth review of RazorTech's gaming headset, featuring immersive audio experience.</p>
+
+        <h2>Additional Insights</h2>
+        <p>Top Games Played: Apex Legends, Fortnite, Call of Duty, and Valorant
+            Specialty: FPS (First-Person Shooter) games and live commentary
+            Unique Content: Known for his “Epic Moments” compilations and humorous commentary style, which keep viewers
+            engaged.</p>
+    </section>
+
+    <script src="creator_profile.js"></script>
+</body>
+
+</html>

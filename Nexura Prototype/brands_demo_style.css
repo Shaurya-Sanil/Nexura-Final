@@ -1,0 +1,218 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f4f7;
+    color: #2c2c2c;
+}
+
+/* Top Bar Styling */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    /* Increase height */
+    padding: 15px 30px;
+    /* Adjust padding for more space */
+    background-color: #1c75bc;
+    color: #ffffff;
+}
+
+.nav-title {
+    font-size: 24px;
+    /* Larger title */
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-link {
+    color: #fca311;
+    text-decoration: none;
+    font-size: 18px;
+    /* Increase font size */
+    margin-left: 20px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* Header */
+header {
+    background-color: #1c75bc;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Search and Filter Section */
+.search-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #e9ecef;
+}
+
+.search-bar,
+.filter-select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    /* Ensure consistent size */
+    max-width: 100%;
+}
+
+/* Parent Container Styling */
+.creator-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* Space between each card */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Individual Creator Card */
+.creator-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    /* Prevent text from going outside the box */
+    text-overflow: ellipsis;
+    /* Adds '...' for overflow text if needed */
+    white-space: normal;
+    /* Allow text to wrap */
+    word-wrap: break-word;
+    /* Break long words to fit inside the box */
+}
+
+
+/* Remove purple underline from links */
+.creator-stats a {
+    text-decoration: none;
+    /* Remove underlines */
+    color: inherit;
+    /* Match the text color */
+}
+
+a:visited {
+    text-decoration: none;
+    /* Remove underline from visited links */
+    color: inherit;
+    /* Prevent the purple visited link color */
+}
+
+
+.creator-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.creator-banner {
+    height: 150px;
+    width: 100%;
+    /* Ensures it spans the card width */
+    background-color: #4e9bd8;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.creator-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #fca311;
+    margin-top: -40px;
+    /* Pull profile image into view */
+    background-color: white;
+}
+
+.creator-info {
+    text-align: center;
+    padding: 15px;
+}
+
+.creator-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #2c2c2c;
+}
+
+.creator-stats {
+    display: flex;
+    justify-content: space-around;
+    /* Distribute stats evenly */
+    margin: 10px 0;
+    width: 100%;
+}
+
+.creator-stats div {
+    font-size: 14px;
+    text-align: center;
+}
+
+.view-profile-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-profile-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 20px;
+    }
+
+    .creator-container {
+        gap: 15px;
+    }
+
+    .creator-card {
+        width: 100%;
+        max-width: 300px;
+        /* Adjust for smaller screens */
+    }
+}

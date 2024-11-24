@@ -1,0 +1,94 @@
+:root {
+    --terracotta: #2D9CFF;
+    /* Brand and header color */
+    --warm-beige: #F4F8FB;
+    /* Background sections */
+    --burnt-orange: #FFC300;
+    /* Accents and highlights */
+    --soft-teal: #333333;
+    /* Text or icon accents */
+    --charcoal: #66AFFF;
+    /* Main text and strong contrast */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--warm-beige);
+    color: var(--soft-teal);
+}
+
+header {
+    background-color: var(--terracotta);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+header .nav-links a:hover {
+    color: var(--burnt-orange);
+}
+
+.booking-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--warm-beige);
+}
+
+.booking-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--charcoal);
+}
+
+.booking-section p {
+    font-size: 1.2rem;
+    color: var(--soft-teal);
+    margin-bottom: 20px;
+}
+
+.booking-container {
+    max-width: 1000px;
+    /* Increased size for the iframe */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--terracotta);
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+}

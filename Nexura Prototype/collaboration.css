@@ -1,0 +1,193 @@
+:root {
+    --terracotta: #2D9CFF;
+    --warm-beige: #F4F8FB;
+    --burnt-orange: #FFC300;
+    --soft-teal: #333333;
+    --charcoal: #66AFFF;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--warm-beige);
+    margin: 0;
+    color: var(--soft-teal);
+}
+
+.navbar {
+    background-color: var(--terracotta);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar nav a,
+.navbar button {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+.login-btn,
+.signup-btn {
+    background-color: var(--burnt-orange);
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.collab-hub {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.intro {
+    text-align: center;
+    padding: 2rem;
+}
+
+.intro h1 {
+    color: var(--terracotta);
+    font-size: 2rem;
+}
+
+.search-bar {
+    padding: 0.5rem;
+    width: 80%;
+    border: 1px solid var(--charcoal);
+    border-radius: 5px;
+}
+
+.campaigns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.campaign-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.campaign-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.campaign-info {
+    padding: 1rem 0;
+}
+
+.campaign-info h2 {
+    color: var(--terracotta);
+    font-size: 1.2rem;
+}
+
+.criteria span {
+    display: inline-block;
+    margin: 0.5rem;
+    background-color: var(--charcoal);
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+}
+
+/* Responsive Grid for Campaign Cards */
+.campaigns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Hover Animation for Campaign Cards */
+.campaign-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.campaign-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effects for Campaign Images */
+.campaign-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.campaign-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Button Styles in Navbar */
+.login-btn,
+.signup-btn {
+    background-color: var(--burnt-orange);
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+    background-color: #f39c12;
+    transform: scale(1.05);
+}
+
+/* Animations for Criteria Badges */
+.criteria span {
+    display: inline-block;
+    margin: 0.5rem;
+    background-color: var(--charcoal);
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.criteria span:hover {
+    background-color: var(--burnt-orange);
+    transform: scale(1.1);
+}
+
+
+
+
+.campaign-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.campaign-card:hover {
+    transform: scale(1.02);
+    /* Subtle zoom effect on hover */
+}
+
+
+
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,153 @@
+/* Color Variables */
+:root {
+    --terracotta: #2D9CFF;
+    /* Brand and header color */
+    --warm-beige: #F4F8FB;
+    /* Background sections */
+    --burnt-orange: #FFC300;
+    /* Accents and highlights */
+    --soft-teal: #333333;
+    /* Text or icon accents */
+    --charcoal: #66AFFF;
+    /* Main text and strong contrast */
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--warm-beige);
+    color: var(--soft-teal);
+    margin: 0;
+    padding: 20px;
+}
+
+.campaign-container {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.campaign-header h1 {
+    color: var(--burnt-orange);
+    margin-bottom: 5px;
+}
+
+.brand-name {
+    font-weight: bold;
+    color: var(--terracotta);
+}
+
+/* Flex Layout for Main Content */
+.campaign-content {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Image Carousel Styling */
+.campaign-image-carousel img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.campaign-image-carousel img:hover {
+    transform: scale(1.05);
+}
+
+/* Qualifications Section */
+.qualifications {
+    background-color: var(--warm-beige);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--terracotta);
+    margin-bottom: 20px;
+}
+
+.qualifications h3 {
+    color: var(--soft-teal);
+    margin-bottom: 10px;
+}
+
+.qualifications ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.qualifications ul li {
+    padding: 5px 0;
+}
+
+/* Button Styling */
+.wishlist-btn,
+.optin-btn {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.wishlist-btn {
+    background-color: var(--warm-beige);
+    color: var(--soft-teal);
+    margin-right: 10px;
+}
+
+.optin-btn {
+    background-color: var(--burnt-orange);
+    color: #ffffff;
+}
+
+.wishlist-btn:hover {
+    background-color: #d3d3d3;
+}
+
+.optin-btn:hover {
+    background-color: #db8a00;
+}
+
+/* Deliverables and Compensation Section */
+.deliverables,
+.compensation,
+.campaign-description {
+    margin-top: 20px;
+    background-color: var(--warm-beige);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--charcoal);
+}
+
+.deliverables h3,
+.compensation h3 {
+    color: var(--soft-teal);
+}
+
+/* Campaign Description */
+.campaign-description p {
+    color: var(--soft-teal);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .campaign-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .campaign-image-carousel img {
+        max-width: 100%;
+    }
+
+    .wishlist-btn,
+    .optin-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
